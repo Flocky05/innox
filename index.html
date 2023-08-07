@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./images/icons/favicon/INNOX2.0 1.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                blue: '#0081DE',
+                navyBlue:'#2D405A'
+              },
+              fontFamily:{
+                poppins:['Poppins', 'sans-serif']
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+<!-- nav section start  -->
+    <div class="nav flex text-navyBlue justify-between m-10">
+        <button class="flex items-center">
+            <img src="./images/icons/favicon/INNOX2.0 1.png" style="width: 30px; height: 30px; margin-right: 5px;" alt="">
+            <h3>innox</h3>
+        </button>
+        <div class="flex justify-between gap-10">
+            <button>Home</p>
+            <button>How it works</p>
+            <button>Marketplace</p>
+            <button>About</p>
+        </div>
+        <button class="flex items-center bg-slate-200 mx-6 p-2 gap-4">
+            <img src="./images/icons/navbar/folder.png" style="width: 25px; height: 25px; margin-right: 5px; padding: 2px" alt="">
+            <p>Connect Wallet</p>
+            <img src="./images/icons/navbar/user.png" style="width: 25px; height: 25px; margin-right: 5px;padding: 2px;" alt="">
+        </button>
+    </div>
+<!-- nav section end -->
+
 </body>
 </html>
